@@ -7,6 +7,7 @@ This repo contains the source code for a simple React Todo List component and it
 It demonstrates:  
 - A React component  
 - A custom hook to encapsulate state and behaviour  
+- Add, edit and deletion of tasks
 - localStorage persistence  
 - Drag-and-drop reordering  
 
