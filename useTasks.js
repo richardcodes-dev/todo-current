@@ -44,8 +44,10 @@ export function useTasks() {
     if (draggingEl === i) return;
 
     const updatedTasks = [...tasks];
-    const [movedItem] = updatedTasks.splice(draggingEl, 1);
-    updatedTasks.splice(i, 0, movedItem);
+    const removedItems = updatedTasks.splice(draggingEl, 1); // take out the task being dragged
+    updatedTasks.splice(i, 0, removedItems[0]); // put it back at the new position
+    setTasks(updatedTasks);
+
 
     setDraggingEl(i);
     setTasks(updatedTasks);
