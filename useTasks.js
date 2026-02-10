@@ -37,7 +37,6 @@ export function useTasks() {
 
   const onDragStart = (e, i) => {
     setDraggingEl(i);
-    e.target.classList.add('opacity-50');
   };
 
   const onDragOver = (e, i) => {
@@ -73,6 +72,7 @@ export function useTasks() {
     setInput,
     addTask,
     deleteTask,
+    draggingEl,
     onDragStart,
     onDragOver,
     onDragEnd,

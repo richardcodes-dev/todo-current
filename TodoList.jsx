@@ -4,7 +4,7 @@ export default function TodoList() {
 
   const {
     tasks, input, setInput, addTask, deleteTask, toggleComplete, cleanUp, updateTaskText,
-    onDragStart, onDragOver, onDragEnd,
+    draggingEl, onDragStart, onDragOver, onDragEnd,
     editMode, setEditMode
   } = useTasks();
 
@@ -57,7 +57,7 @@ export default function TodoList() {
             onDragStart={(e) => onDragStart(e, i)}
             onDragOver={(e) => onDragOver(e, i)}
             onDragEnd={onDragEnd}
-            className={`relative flex items-center px-2 py-1 transition-transform bg-white rounded-2xl gap-x-2 ${editMode ? 'hover:cursor-grab' : ''}`}
+            className={`relative flex items-center px-2 py-1 transition-transform bg-white rounded-2xl gap-x-2 ${editMode ? 'hover:cursor-grab' : ''} ${draggingEl === i ? 'opacity-50' : ''}`}
           >
             <i className={`absolute left-2 transition-opacity block ${editMode ? 'opacity-30' : 'opacity-0'}`} title="Drag to reorder" aria-label='Drag to reorder'>
               <svg
