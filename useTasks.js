@@ -48,7 +48,6 @@ export function useTasks() {
     updatedTasks.splice(i, 0, removedItems[0]); // put it back at the new position
     setTasks(updatedTasks);
 
-
     setDraggingEl(i);
     setTasks(updatedTasks);
   };
