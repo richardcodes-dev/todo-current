@@ -1,9 +1,13 @@
-This repo contains a simplified extract from a larger Astro project.
+# React Todo List Demo
 
-It demonstrates:
-- a React component
-- a custom hook to encapsulate state and behaviour
-- localStorage persistence
-- drag and drop reordering
+> This repository is for demonstration and learning purposes only. It is **not intended to be run or downloaded as a standalone app**.
 
-The code is not intended to be run standalone.
+This repo contains the source code for a simple React Todo List component and its custom hook.  
+
+It demonstrates:  
+- A React component  
+- A custom hook to encapsulate state and behaviour  
+- localStorage persistence  
+- Drag-and-drop reordering  
+
+> Note: The component relies on Tailwind CSS from my portfolio site for styling.
