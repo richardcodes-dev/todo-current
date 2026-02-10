@@ -98,7 +98,7 @@ export default function TodoList() {
 
             </div>
 
-            <div className={`flex justify-end items-center gap-3 transition-all ${editMode ? 'w-6 opacity-100' : 'w-0 opacity-0'}`}>
+            <div className={`flex justify-end items-center gap-3 transition-opacity ${editMode ? 'w-6 opacity-100' : 'opacity-0'}`}>
               <button
                 onClick={() => deleteTask(task.id)}
                 className={`text-lg text-red-500 opacity-50 hover:text-primary-500 hover:opacity-100`}
