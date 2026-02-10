@@ -53,7 +53,6 @@ export function useTasks() {
 
   const onDragEnd = (e) => {
     setDraggingEl(null);
-    e.target.classList.remove('opacity-50');
   };
 
   const toggleComplete = (id) => {
